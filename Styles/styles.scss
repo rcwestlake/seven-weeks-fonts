@@ -8,6 +8,10 @@ body {
   font-family: $unna;
 }
 
+a:visited {
+  color: inherit;
+}
+
 .week {
   border: 3px solid black;
   margin: 20px $display-auto;
@@ -18,12 +22,10 @@ body {
 }
 
 .weekOne {
-  border: 1px solid black;
   height: $main-height;
   width: $main-width;
 
   .main-container {
-    border: 1px solid red;
     display: block;
     margin: $display-auto;
     position: relative;
@@ -33,7 +35,6 @@ body {
 
   .art-container {
     display: block;
-    border: 1px solid green;
     height: $full-height;
     margin: $display-auto;
     width: $main-width - 10;
@@ -49,13 +50,20 @@ body {
   }
 
   .design-info {
-    border: 1px solid yellow;
+    background-color: $water-blue;
+    color: $white;
+    font-family: $lato;
     position: absolute;
-    bottom: 10px;
-    left: 40%;
-    right: 40%;
+    bottom: 1px;
+    left: 5%;
     line-height: 25px;
+    padding: 10px 0px;
     text-align: $text-align-center;
+    width: 90%;
+
+    .date {
+      font-size: 12px;
+    }
   }
 }
 
@@ -65,7 +73,7 @@ body {
 }
 
 .water {
-  @include rotate(34deg);
+  @include rotate(41deg);
   color: $water-blue;
   font-size: 80px;
   position: absolute;
@@ -103,4 +111,25 @@ body {
 footer {
   margin-top: 50px;
   text-align: $text-align-center;
+}
+
+//Responsive
+
+@media only screen and (max-width: 990px) {
+  .water {
+    top: 60%;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .water {
+    @include rotate(48deg);
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .water {
+    @include rotate(53deg);
+    top: 65%;
+  }
 }
