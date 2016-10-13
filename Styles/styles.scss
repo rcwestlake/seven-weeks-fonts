@@ -1,3 +1,9 @@
+@import "reset.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+
 body {
+  background: $primary-red;
   box-sizing: border-box;
 }

@@ -1,0 +1,31 @@
+{
+  "name": "seven-weeks-fonts",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rcwestlake/seven-weeks-fonts.git"
+  },
+  "author": "Ryan C Westlake / OutwardUp",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rcwestlake/seven-weeks-fonts/issues"
+  },
+  "homepage": "https://github.com/rcwestlake/seven-weeks-fonts#readme",
+  "dependencies": {
+    "jquery": "^3.1.1"
+  },
+  "devDependencies": {
+    "babel-core": "^6.17.0",
+    "babel-loader": "^6.2.5",
+    "css-loader": "^0.25.0",
+    "node-sass": "^3.10.1",
+    "sass-loader": "^4.0.2",
+    "style-loader": "^0.13.1"
+  }
+}
