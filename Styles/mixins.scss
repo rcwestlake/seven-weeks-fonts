@@ -1,0 +1,26 @@
+@mixin rotate ($deg) {
+    /* Safari */
+  -webkit-transform: rotate($deg);
+
+  /* Firefox */
+  -moz-transform: rotate($deg);
+
+  /* IE */
+  -ms-transform: rotate($deg);
+
+  /* Opera */
+  -o-transform: rotate($deg);
+}
+
+@mixin waterSpray($x, $y, $rotate, $seconds) {
+  -webkit-transform: translateX($x) translateY($y) rotate($rotate);
+     -moz-transform: translateX($x) translateY($y) rotate($rotate);
+      -ms-transform: translateX($x) translateY($y) rotate($rotate);
+       -o-transform: translateX($x) translateY($y) rotate($rotate);
+          transform: translateX($x) translateY($y) rotate($rotate);
+
+  -webkit-transition-delay: $seconds;
+     -moz-transition-delay: $seconds;
+       -o-transition-delay: $seconds;
+          transition-delay: $seconds;
+}

@@ -4,6 +4,103 @@
 
 
 body {
-  background: $primary-red;
   box-sizing: border-box;
+  font-family: $unna;
+}
+
+.week {
+  border: 3px solid black;
+  margin: 20px $display-auto;
+  padding: $small-mp;
+  text-align: $text-align-center;
+  width: 30px;
+
+}
+
+.weekOne {
+  border: 1px solid black;
+  height: $main-height;
+  width: $main-width;
+
+  .main-container {
+    border: 1px solid red;
+    display: block;
+    margin: $display-auto;
+    position: relative;
+    height: $main-height;
+    width: $main-width - 5;
+  }
+
+  .art-container {
+    display: block;
+    border: 1px solid green;
+    height: $full-height;
+    margin: $display-auto;
+    width: $main-width - 10;
+
+    .quote {
+      font-family: $lato;
+      font-weight: $lato-light;
+      font-size: 18px;
+      margin-top: 250px;
+      line-height: 35px;
+      text-align: $text-align-center;
+    }
+  }
+
+  .design-info {
+    border: 1px solid yellow;
+    position: absolute;
+    bottom: 10px;
+    left: 40%;
+    right: 40%;
+    line-height: 25px;
+    text-align: $text-align-center;
+  }
+}
+
+.fire {
+  color: $fire-red;
+  font-size: 40px;
+}
+
+.water {
+  @include rotate(34deg);
+  color: $water-blue;
+  font-size: 80px;
+  position: absolute;
+  right: 30px;
+  top: 53%;
+
+  .char1 {
+    @include waterSpray (-1px, 68px, -17deg, 7s);
+  }
+
+  .char2 {
+    @include waterSpray (-3px, 39px, -13deg, 6s)
+  }
+
+  .char3 {
+    @include waterSpray (-5px, 21px, -9deg, 5s)
+  }
+
+  .char4 {
+    @include waterSpray (-7px, 15px, -7deg, 4s)
+  }
+
+  .char5 {
+    @include waterSpray (-9px, 11px, -5deg, 3s)
+  }
+
+  .char6 {
+    color: $fire-red;
+    @include waterSpray (-11px, 7px, -3deg, 2s)
+  }
+
+
+}
+
+footer {
+  margin-top: 50px;
+  text-align: $text-align-center;
 }
