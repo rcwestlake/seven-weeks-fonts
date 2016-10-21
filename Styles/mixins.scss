@@ -24,3 +24,7 @@
        -o-transition-delay: $seconds;
           transition-delay: $seconds;
 }
+
+@mixin boxsizing {
+  box-sizing: border-box;
+}

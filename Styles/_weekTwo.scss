@@ -1,0 +1,48 @@
+@import "reset.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+body {
+  @include boxsizing;
+}
+
+.weekTwo {
+  .main-container {
+    margin: $display-auto;
+    position: relative;
+    height: $main-height;
+    width: $main-width;
+  }
+
+  .art-container {
+    display: block;
+    height: $full-height;
+    margin: $display-auto;
+    width: $main-width - 10;
+
+    .quote {
+      font-family: $vollkorn;
+      font-size: 18px;
+      margin-top: 250px;
+      line-height: 35px;
+      text-align: $text-align-center;
+    }
+  }
+
+  .design-info {
+    background-color: $water-blue;
+    color: $white;
+    font-family: $open-sans;
+    position: absolute;
+    bottom: 1px;
+    left: 5%;
+    line-height: 25px;
+    padding: 10px 0px;
+    text-align: $text-align-center;
+    width: $main-width;
+
+    .date {
+      font-size: 12px;
+    }
+  }
+}

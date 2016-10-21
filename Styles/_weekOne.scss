@@ -2,9 +2,9 @@
 @import "variables.scss";
 @import "mixins.scss";
 
-
+// Week One
 body {
-  box-sizing: border-box;
+  @include boxsizing;
   font-family: $unna;
 }
 
@@ -108,11 +108,6 @@ a:visited {
 
 }
 
-footer {
-  margin-top: 50px;
-  text-align: $text-align-center;
-}
-
 //Responsive
 
 @media only screen and (max-width: 990px) {
@@ -133,3 +128,5 @@ footer {
     top: 65%;
   }
 }
+
+//Week Two
