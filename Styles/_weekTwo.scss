@@ -6,8 +6,11 @@ body {
   @include boxsizing;
 }
 
+
+
 .weekTwo {
   .main-container {
+    background-color: $nice-blue;
     margin: $display-auto;
     position: relative;
     height: $main-height;
@@ -20,22 +23,35 @@ body {
     margin: $display-auto;
     width: $main-width - 10;
 
+    .week {
+      @include week;
+    }
+
     .quote {
+      color: $brown;
       font-family: $vollkorn;
-      font-size: 18px;
+      font-size: 40px;
       margin-top: 250px;
       line-height: 35px;
       text-align: $text-align-center;
+
+      .bold {
+        font-weight: bold;
+      }
+    }
+
+    .author {
+      font-size: 10px;
+      margin-top: 10px;
+      text-align: center;
     }
   }
 
   .design-info {
-    background-color: $water-blue;
+    background-color: $brown;
     color: $white;
     font-family: $open-sans;
     position: absolute;
-    bottom: 1px;
-    left: 5%;
     line-height: 25px;
     padding: 10px 0px;
     text-align: $text-align-center;
