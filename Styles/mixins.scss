@@ -1,0 +1,38 @@
+@mixin rotate ($deg) {
+    /* Safari */
+  -webkit-transform: rotate($deg);
+
+  /* Firefox */
+  -moz-transform: rotate($deg);
+
+  /* IE */
+  -ms-transform: rotate($deg);
+
+  /* Opera */
+  -o-transform: rotate($deg);
+}
+
+@mixin waterSpray($x, $y, $rotate, $seconds) {
+  -webkit-transform: translateX($x) translateY($y) rotate($rotate);
+     -moz-transform: translateX($x) translateY($y) rotate($rotate);
+      -ms-transform: translateX($x) translateY($y) rotate($rotate);
+       -o-transform: translateX($x) translateY($y) rotate($rotate);
+          transform: translateX($x) translateY($y) rotate($rotate);
+
+  -webkit-transition-delay: $seconds;
+     -moz-transition-delay: $seconds;
+       -o-transition-delay: $seconds;
+          transition-delay: $seconds;
+}
+
+@mixin boxsizing {
+  box-sizing: border-box;
+}
+
+@mixin week {
+  border: 3px solid black;
+  margin: 20px $display-auto;
+  padding: $small-mp;
+  text-align: $text-align-center;
+  width: 30px;
+}

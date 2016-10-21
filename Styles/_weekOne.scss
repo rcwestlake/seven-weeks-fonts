@@ -1,0 +1,127 @@
+@import "reset.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+// Week One
+body {
+  @include boxsizing;
+  font-family: $unna;
+}
+
+a:visited {
+  color: inherit;
+}
+
+.week {
+  @include week;
+}
+
+.weekOne {
+  height: $main-height;
+  width: $main-width;
+
+  .main-container {
+    display: block;
+    margin: $display-auto;
+    position: relative;
+    height: $main-height;
+    width: $main-width - 5;
+  }
+
+  .art-container {
+    display: block;
+    height: $full-height;
+    margin: $display-auto;
+    width: $main-width - 10;
+
+    .quote {
+      font-family: $lato;
+      font-weight: $lato-light;
+      font-size: 18px;
+      margin-top: 250px;
+      line-height: 35px;
+      text-align: $text-align-center;
+    }
+  }
+
+  .design-info {
+    background-color: $water-blue;
+    color: $white;
+    font-family: $lato;
+    position: absolute;
+    bottom: -20px;
+    left: 5%;
+    line-height: 25px;
+    padding: 10px 0px;
+    text-align: $text-align-center;
+    width: 90%;
+
+    .date {
+      font-size: 12px;
+    }
+  }
+}
+
+.fire {
+  color: $fire-red;
+  font-size: 40px;
+}
+
+.water {
+  @include rotate(41deg);
+  color: $water-blue;
+  font-size: 80px;
+  position: absolute;
+  right: 30px;
+  top: 53%;
+
+  .char1 {
+    @include waterSpray (-1px, 68px, -17deg, 7s);
+  }
+
+  .char2 {
+    @include waterSpray (-3px, 39px, -13deg, 6s)
+  }
+
+  .char3 {
+    @include waterSpray (-5px, 21px, -9deg, 5s)
+  }
+
+  .char4 {
+    @include waterSpray (-7px, 15px, -7deg, 4s)
+  }
+
+  .char5 {
+    @include waterSpray (-9px, 11px, -5deg, 3s)
+  }
+
+  .char6 {
+    color: $fire-red;
+    @include waterSpray (-11px, 7px, -3deg, 2s)
+  }
+
+
+}
+
+//Responsive
+
+@media only screen and (max-width: 990px) {
+  .water {
+    top: 60%;
+  }
+}
+
+@media only screen and (max-width: 670px) {
+  .water {
+    @include rotate(48deg);
+  }
+}
+
+@media only screen and (max-width: 580px) {
+  .water {
+    @include rotate(53deg);
+    top: 65%;
+  }
+}
+
+//Week Two

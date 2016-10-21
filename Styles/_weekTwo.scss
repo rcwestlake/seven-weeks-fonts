@@ -1,0 +1,64 @@
+@import "reset.scss";
+@import "variables.scss";
+@import "mixins.scss";
+
+body {
+  @include boxsizing;
+}
+
+
+
+.weekTwo {
+  .main-container {
+    background-color: $nice-blue;
+    margin: $display-auto;
+    position: relative;
+    height: $main-height;
+    width: $main-width;
+  }
+
+  .art-container {
+    display: block;
+    height: $full-height;
+    margin: $display-auto;
+    width: $main-width - 10;
+
+    .week {
+      @include week;
+    }
+
+    .quote {
+      color: $brown;
+      font-family: $vollkorn;
+      font-size: 40px;
+      margin-top: 250px;
+      line-height: 35px;
+      text-align: $text-align-center;
+
+      .bold {
+        font-weight: bold;
+      }
+    }
+
+    .author {
+      font-size: 10px;
+      margin-top: 10px;
+      text-align: center;
+    }
+  }
+
+  .design-info {
+    background-color: $brown;
+    color: $white;
+    font-family: $open-sans;
+    position: absolute;
+    line-height: 25px;
+    padding: 10px 0px;
+    text-align: $text-align-center;
+    width: $main-width;
+
+    .date {
+      font-size: 12px;
+    }
+  }
+}
