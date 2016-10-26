@@ -1,12 +1,9 @@
-@import "reset.scss";
 @import "variables.scss";
 @import "mixins.scss";
 
 body {
   @include boxsizing;
 }
-
-
 
 .weekTwo {
   .main-container {
