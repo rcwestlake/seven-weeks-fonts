@@ -2,9 +2,9 @@
 @import "variables.scss";
 @import "mixins.scss";
 
-
+// Week One
 body {
-  box-sizing: border-box;
+  @include boxsizing;
   font-family: $unna;
 }
 
@@ -13,12 +13,7 @@ a:visited {
 }
 
 .week {
-  border: 3px solid black;
-  margin: 20px $display-auto;
-  padding: $small-mp;
-  text-align: $text-align-center;
-  width: 30px;
-
+  @include week;
 }
 
 .weekOne {
@@ -54,7 +49,7 @@ a:visited {
     color: $white;
     font-family: $lato;
     position: absolute;
-    bottom: 1px;
+    bottom: -20px;
     left: 5%;
     line-height: 25px;
     padding: 10px 0px;
@@ -108,11 +103,6 @@ a:visited {
 
 }
 
-footer {
-  margin-top: 50px;
-  text-align: $text-align-center;
-}
-
 //Responsive
 
 @media only screen and (max-width: 990px) {
@@ -133,3 +123,5 @@ footer {
     top: 65%;
   }
 }
+
+//Week Two

@@ -24,3 +24,15 @@
        -o-transition-delay: $seconds;
           transition-delay: $seconds;
 }
+
+@mixin boxsizing {
+  box-sizing: border-box;
+}
+
+@mixin week {
+  border: 3px solid black;
+  margin: 20px $display-auto;
+  padding: $small-mp;
+  text-align: $text-align-center;
+  width: 30px;
+}
