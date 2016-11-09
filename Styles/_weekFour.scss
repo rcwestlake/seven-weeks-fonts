@@ -5,9 +5,9 @@ body {
   @include boxsizing;
 }
 
-.weekThree {
+.weekFour {
   .main-container {
-    background-color: $pretty-pink;
+    background-color: $white;
     margin: $display-auto;
     position: relative;
     height: $main-height;
@@ -26,15 +26,21 @@ body {
     }
 
     .quote {
-      color: $calm-blue;
-      font-family: $arvo;
+      color: $near-black;
+      font-family: $open-sans;
       font-size: 40px;
       margin-top: 250px;
       line-height: 35px;
       text-align: $text-align-center;
+
+      .whooshing {
+        color: $whooshing;
+        font-family: $abril;
+      }
     }
 
     .author {
+      color: $whooshing;
       font-size: 10px;
       margin-top: 10px;
       text-align: center;
